@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class Menu_List
 {
+	// this method is used to clear the screen
     static void clrscr()
     {
 
