@@ -2,9 +2,13 @@ import java.util.Scanner;
 
 public class Menu_List
 {
+    static void clrscr()
+    {
 
-	// main method
-	public static void main(String[] args) {
+    }
+
+	// menu method
+	public static void menu() {
 	
 		// it is used for taking input from user
 		Scanner sc= new Scanner(System.in);
@@ -19,6 +23,7 @@ public class Menu_List
 			System.out.println("Menu  Card of Taj Hotel :- \n 1 : Starter \n 2 : Mains   \n 3 : Dessert ");
 			System.out.print("Select your choise :");
 			int choise = sc.nextInt();
+            clrscr();
 			
 			// this is switch case for taking  user choice
 			switch(choise) {
@@ -108,7 +113,15 @@ public class Menu_List
 		
 		// it is while_loop for using the user choice that user wants to resart this options
 		while(ans == 'y'|| ans =='Y');
+        clrscr();
 		
 		System.out.println("Thanks for visit  :) ");
 	}
+
+    // main method
+    public static void main(String[] args)
+    {
+        // menu method is calling
+        menu();
+    }
 }
